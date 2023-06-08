@@ -1,25 +1,18 @@
 {
   "name": "natabi-js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git cz"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "author": "Tran Son Hoang <son.hoang01@gmail.com>",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hoangtranson/natabi-js.git"
-  },
-  "keywords": [],
-  "config": {
-    "commitizen": {
-      "path": "git-cz"
-    }
+  "dependencies": {
+    "lit": "^2.7.2"
   },
   "devDependencies": {
-    "git-cz": "^4.9.0"
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
   }
 }
