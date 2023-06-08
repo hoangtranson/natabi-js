@@ -1,8 +1,17 @@
 {
   "name": "natabi-js",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/natabi.umd.cjs",
+  "module": "./dist/natabi.js",
+  "exports": {
+    ".": {
+      "import": "./dist/natabi.js",
+      "require": "./dist/natabi.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
