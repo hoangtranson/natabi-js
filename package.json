@@ -12,6 +12,7 @@
       "require": "./dist/natabi.umd.cjs"
     }
   },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
